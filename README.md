@@ -1,7 +1,6 @@
-# ✦ Quantum Novel Assistant (Ver.11 React)
+# ✦ Quantum Novel Assistant (Ver.12 React)
 
 生成AI（Google Gemini）と数理最適化（Fixstars Amplify）を組み合わせた、人間共創型の小説執筆支援システムです。
-ブラックボックス最適化（BBO）を用いることで、ユーザーの「好み」を学習し、最適な物語の構成要素を提案します。
 
 ## ✨ 特徴
 
