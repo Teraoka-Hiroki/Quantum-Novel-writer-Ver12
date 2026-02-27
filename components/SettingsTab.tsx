@@ -144,13 +144,7 @@ export const SettingsTab: React.FC<Props> = ({ state, updateState, updateParams,
                         onChange={(e) => updateState({ amplify_token: e.target.value })}
                     />
                 </div>
-                <div>
-                    <label className="text-xs text-gray-400 block mb-1">Pollinations.ai (挿絵生成用・登録不要)</label>
-                    <div className="bg-slate-900 border border-slate-700 rounded px-3 py-2 text-sm text-gray-400">
-                        自動設定 - APIキー不要です（登録不要・完全無料）
-                    </div>
-                    <p className="text-xs text-gray-500 mt-1">✅ 完全に無料です！Pollinations.aiは登録不要で、インターネット接続があれば画像生成できます。</p>
-                </div>
+                
             </div>
         </div>
       </div>
