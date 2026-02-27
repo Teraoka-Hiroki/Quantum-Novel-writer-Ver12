@@ -1,6 +1,7 @@
 flask
 flask-cors
 google-generativeai
+google-genai
 numpy
 scikit-learn
 amplify
