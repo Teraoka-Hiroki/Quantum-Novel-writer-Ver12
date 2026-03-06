@@ -97,7 +97,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-slate-950 text-gray-200 font-sans selection:bg-blue-500/30">
         <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 shadow-lg">
             <div className="container mx-auto px-6">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-between items-center h-auto min-h-[4rem] py-4">
                     <div className="flex items-center gap-3">
                         <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-2 rounded-lg shadow-lg"><Layout className="w-6 h-6 text-white" /></div>
                         <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
@@ -106,8 +106,27 @@ const App: React.FC = () => {
                             <span className="text-xs text-gray-500 font-mono ml-2">Ver.13</span>
                         </h1>
                     </div>
+                    {/* ご指定のプロフィールロゴ部分（上にスペースを追加） */}
+                    <div className="flex items-center mt-6 md:mt-4 bg-slate-900/80 p-3 pr-6 rounded-full border border-slate-700 shadow-xl ml-4 hover:border-cyan-500/50 transition-colors cursor-default">
+                        <img 
+                            src="./teraoka.png" 
+                            onError={(e) => {
+                                (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=Teraoka&background=0f172a&color=fff';
+                            }} 
+                            alt="Profile" 
+                            className="w-14 h-14 rounded-full object-cover border-2 border-cyan-500/30" 
+                        />
+                        <div className="text-right ml-4">
+                            <p className="font-bold text-sm text-cyan-400">テラオカ電子の自由探究ゼミ</p>
+                            <p className="text-xs text-gray-400 max-w-[200px] leading-tight mt-1">
+                                自分が価値を置くものに向かって<br />
+                                こつこつ努力する姿ほど<br />
+                                素晴らしいものはない
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex overflow-x-auto no-scrollbar">
+                <div className="flex overflow-x-auto no-scrollbar mt-2">
                     <TabButton index={0} icon={Settings} label="設定" />
                     <TabButton index={1} icon={Cpu} label="最適化" />
                     <TabButton index={2} icon={PenTool} label="ドラフト" />
