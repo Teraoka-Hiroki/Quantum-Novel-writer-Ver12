@@ -101,7 +101,9 @@ const App: React.FC = () => {
                     <div className="flex items-center gap-3">
                         <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-2 rounded-lg shadow-lg"><Layout className="w-6 h-6 text-white" /></div>
                         <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-                            量子アニーリング駆動型 小説場面執筆支援アプリ <span className="text-xs text-gray-500 font-mono ml-2">Ver.12</span>
+                            量子アニーリング駆動型 小説場面執筆支援アプリ<br />
+                            「乙物語」 翠地 (すいち) 
+                            <span className="text-xs text-gray-500 font-mono ml-2">Ver.13</span>
                         </h1>
                     </div>
                 </div>
